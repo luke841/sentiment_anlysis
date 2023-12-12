@@ -34,7 +34,6 @@ pure-eval
 Pygments
 python-dateutil
 pytz
-pywin32
 pyzmq
 regex
 scikit-learn
