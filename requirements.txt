@@ -49,3 +49,5 @@ virtualenv
 wcwidth
 Werkzeug
 gunicorn
+nltk_data
+nltk.download
