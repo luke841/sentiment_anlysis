@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 import joblib
-from utils import TextPreprocessor
+#from utils import TextPreprocessor
 import numpy as np
 import pandas as pd
 import regex as re
