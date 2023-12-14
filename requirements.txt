@@ -50,3 +50,4 @@ virtualenv
 wcwidth
 Werkzeug
 gunicorn
+nltk_data
