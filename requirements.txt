@@ -50,4 +50,4 @@ virtualenv
 wcwidth
 Werkzeug
 gunicorn
-nltk.download('stopwords')
+
