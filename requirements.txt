@@ -27,8 +27,6 @@ numpy
 packaging
 pandas
 parso
-nltk
-nltk.download('stopwords')
 platformdirs
 prompt-toolkit
 psutil
