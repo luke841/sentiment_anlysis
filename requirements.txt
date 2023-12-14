@@ -50,3 +50,4 @@ virtualenv
 wcwidth
 Werkzeug
 gunicorn
+nltk @ file:///opt/conda/conda-bld/nltk_1645628263994/work
