@@ -45,6 +45,7 @@ tornado
 tqdm
 traitlets
 tzdata
+corpora
 virtualenv
 wcwidth
 Werkzeug
