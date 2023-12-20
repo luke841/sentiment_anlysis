@@ -4,7 +4,7 @@ import joblib
 
 
 app = Flask(__name__)
-with open('model.joblib', 'rb') as f:
+with open('sentiment_analysis_app/model.joblib', 'rb') as f:
     model = joblib.load(f)
 
 
