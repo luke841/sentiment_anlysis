@@ -12,8 +12,6 @@ from imblearn.pipeline import Pipeline as ImbPipeline
 from imblearn.over_sampling import SMOTE
 
 
-
-
 if __name__ == "__main__":
    #may need to change the following to your location of sentiments.csv
    df = pd.read_csv(r'C:\Users\bhara\Downloads\Hotel_sentiment _project\google_reviews3.csv') 
