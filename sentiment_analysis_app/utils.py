@@ -9,6 +9,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
+
 # Define stop words
 stop_words_keywords = set(stopwords.words('english'))
 
@@ -22,6 +23,7 @@ additional_stop_words = [
 ]
 
 stop_words_keywords.update(additional_stop_words)
+
 
 class TextPreprocessor(BaseEstimator, TransformerMixin):
     def __init__(self, stop_words=None):
