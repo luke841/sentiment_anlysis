@@ -7,7 +7,6 @@ import joblib
 from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
-from utils import TextPreprocessor
 from imblearn.pipeline import Pipeline as ImbPipeline
 from imblearn.over_sampling import SMOTE
 
@@ -28,6 +27,6 @@ pipeline = ImbPipeline([
 print("processing")
 
 # Train the model using the pipeline
-pipeline.fit(df['text'],df['label'])
+pipeline.fit(df['text'], df['label'])
 joblib.dump(pipeline, open('model.joblib','wb'))
 

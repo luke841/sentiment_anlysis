@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 import joblib
-from utils import TextPreprocessor
 
 
 app = Flask(__name__)
