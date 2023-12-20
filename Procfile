@@ -1,1 +1,1 @@
-web: python app.py
+web: gunicorn sentiment_analysis_app.app:app

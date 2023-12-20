@@ -23,6 +23,7 @@ additional_stop_words = [
 
 stop_words_keywords.update(additional_stop_words)
 
+
 class TextPreprocessor(BaseEstimator, TransformerMixin):
     def __init__(self, stop_words=None):
         self.stop_words = stop_words or set()

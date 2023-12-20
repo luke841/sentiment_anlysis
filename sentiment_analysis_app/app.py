@@ -3,14 +3,18 @@ import pandas as pd
 import joblib
 from utils import TextPreprocessor
 
+
 app = Flask(__name__)
-model = joblib.load(open('model.joblib','rb'))
+with open('model.joblib', 'rb') as f:
+    model = joblib.load(f)
+
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/predict',methods=['POST'])
+
+@app.route('/predict', methods=['POST'])
 def predict():
 
     input_text = request.form['text']
@@ -20,7 +24,10 @@ def predict():
     else:
         output = 'negative'
 
-    return render_template('index.html', sentiment=f'Predicted sentiment of "{input_text}" is {output}.')
+    return render_template(
+        'index.html',
+        sentiment=f'Predicted sentiment of "{input_text}" is {output}.'
+    )
 
 
 if __name__ == "__main__":
