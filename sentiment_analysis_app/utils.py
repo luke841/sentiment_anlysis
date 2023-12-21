@@ -10,6 +10,9 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
 
+# Downlaod the stop words
+nltk.download('stopwords')
+
 # Define stop words
 stop_words_keywords = set(stopwords.words('english'))
 
