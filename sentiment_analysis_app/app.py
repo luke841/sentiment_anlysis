@@ -12,7 +12,11 @@ PROJECT_ROOT_FOLDER = Path(__file__).resolve().parent
 with open(PROJECT_ROOT_FOLDER / 'model.joblib', 'rb') as f:
     model = joblib.load(f)
 
+
 app = Flask(__name__)
+with open('model.joblib', 'rb') as f:
+    model = joblib.load(f)
+
 
 @app.route('/')
 def home():
